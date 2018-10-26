@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:94:"/usr/local/nginx/html/fastadmin/public/../application/admin/view/general/attachment/index.html";i:1540371267;s:74:"/usr/local/nginx/html/fastadmin/application/admin/view/layout/default.html";i:1540371267;s:71:"/usr/local/nginx/html/fastadmin/application/admin/view/common/meta.html";i:1540371267;s:73:"/usr/local/nginx/html/fastadmin/application/admin/view/common/script.html";i:1540371267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:92:"E:\phpStudy\PHPTutorial\WWW\fastadmin\public/../application/admin\view\auth\group\index.html";i:1540376476;s:80:"E:\phpStudy\PHPTutorial\WWW\fastadmin\application\admin\view\layout\default.html";i:1540376476;s:77:"E:\phpStudy\PHPTutorial\WWW\fastadmin\application\admin\view\common\meta.html";i:1540376476;s:79:"E:\phpStudy\PHPTutorial\WWW\fastadmin\application\admin\view\common\script.html";i:1540376476;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,9 +58,12 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar(); ?>
+                        <?php echo build_toolbar('refresh,add,delete'); ?>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover" width="100%">
+                    <table id="table" class="table table-striped table-bordered table-hover" 
+                           data-operate-edit="<?php echo $auth->check('auth/group/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('auth/group/del'); ?>" 
+                           width="100%">
                     </table>
                 </div>
             </div>

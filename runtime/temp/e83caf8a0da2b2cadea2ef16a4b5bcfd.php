@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"/usr/local/nginx/html/fastadmin/public/../application/index/view/index/index.html";i:1540371267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:87:"E:\phpStudy\PHPTutorial\WWW\fastadmin\public/../application/index\view\index\index.html";i:1540376476;}*/ ?>
 <!DOCTYPE html>
 <html>
 
